@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="home.david.finances.EditingFieldsFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:text="submit" />
+
+            <Button
+                android:id="@+id/defaults_btn"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:text="defaults" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Item:" />
+
+                    <EditText
+                        android:id="@+id/item_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="UPC:" />
+
+                    <EditText
+                        android:id="@+id/upc_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Cost:" />
+
+                    <EditText
+                        android:id="@+id/cost_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Category:" />
+
+                    <EditText
+                        android:id="@+id/category_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Date/Time:" />
+
+                    <EditText
+                        android:id="@+id/datetime_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="More Info:" />
+
+                    <EditText
+                        android:id="@+id/more_et"
+                        style="@style/entry"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

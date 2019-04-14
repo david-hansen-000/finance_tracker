@@ -1,0 +1,11 @@
+Ok, now let's tidy up the Editor part
+add an Edit text up top for personal queries
+look at the query to see if rowid is part of the column list, and if no inner joins, then
+turn on edit popup/delete, else turn it off
+make it more exportable to general database use
+maybe show the kinds of column names with types, ie full creation time set up of table
+
+oh, add a dialog of some sort showing that a date entered in receipt data already has an entry
+
+
+

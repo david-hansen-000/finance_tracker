@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LabeledField">
+        <attr name="label" format="string"/>
+        <attr name="text" format="string"/>
+        <attr name="input_type" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="decimal" value="1"/>
+            <enum name="signed" value="2"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="BillLayout">
+        <attr name="text"/>
+        <attr name="amount" format="string"/>
+        <attr name="date" format="string"/>
+        <attr name="btnText" format="string"/>
+        <attr name="amount_weight" format="float"/>
+        <attr name="date_weight" format="float"/>
+        <attr name="btn_weight" format="float"/>
+    </declare-styleable>
+</resources>

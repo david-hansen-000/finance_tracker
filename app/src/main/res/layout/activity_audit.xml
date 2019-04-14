@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AuditActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".14"
+            android:layout_height="match_parent"
+            android:text="SQL:"
+            android:gravity="center"
+            android:id="@+id/sql_tv"/>
+
+        <EditText
+            android:id="@+id/sql_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:textSize="10sp"
+            android:inputType="text|textMultiLine" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight=".26"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:id="@+id/sql_submit_btn"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sql_results_txt"/>
+    </ScrollView>
+
+</LinearLayout>

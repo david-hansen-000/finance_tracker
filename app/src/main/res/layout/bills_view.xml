@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bill="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bills_main">
+
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_rent"
+        bill:btnText="rent"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_directv"
+        bill:btnText="directv"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_gas"
+        bill:btnText="gas"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_power"
+        bill:btnText="power"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_phone"
+        bill:btnText="phone"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_insurance"
+        bill:btnText="insur"/>
+    <home.david.finances.BillLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_paycheck"
+        bill:btnText="pay"/>
+    
+
+
+</LinearLayout>

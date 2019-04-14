@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/complete_bill_type"
+        android:background="@drawable/plain_border"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/complete_bill_amount"
+        android:background="@drawable/plain_border"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/complete_bill_duedate"
+        android:background="@drawable/plain_border"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/complete_bill_total"
+        android:background="@drawable/plain_border"/>
+</LinearLayout>
